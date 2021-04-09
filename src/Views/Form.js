@@ -3,7 +3,7 @@ import '../Styling/Form.css';
 
 // eslint-disable-next-line react/prop-types
 function Form({ onSearch }) {
-  const [subreddit, setSubreddit] = useState('javascript');
+  const [subreddit, setSubreddit] = useState('reactjs');
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -12,7 +12,7 @@ function Form({ onSearch }) {
 
   return (
     <form className="formContainer" onSubmit={onSubmit}>
-      <label className="label" htmlFor="reddit">
+      <label className="label" htmlFor="r /">
         r /
         <input
           className="input"

@@ -1,23 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../images_and_logos/logo.svg';
-import '../Styling/Header.css';
+import styles from '../Styling/Header.module.css';
 
 function Header() {
   return (
     <>
-      <header>
+      <header className={styles.header}>
         <Link to="/">
-          <img className="Logo" src={Logo} alt="Reddit Timer Logo" />
+          <img className={styles.Logo} src={Logo} alt="Reddit Timer Logo" />
         </Link>
         <nav>
-          <Link className="NavLinks" to="/search/javascript">
+          <Link className={styles.NavLinks} to="/search/javascript">
             Search
           </Link>
-          <Link className="NavLinks" to="/#how-it-works">
+          <Link className={styles.NavLinks} to="/how-it-works">
             How it works
           </Link>
-          <Link className="NavLinks" to="/#about">
+          <Link className={styles.NavLinks} to="/about">
             About
           </Link>
         </nav>
